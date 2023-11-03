@@ -13,4 +13,7 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 ### 링크
-[![image](https://github.com/tjdsksro90/my-todo-list/assets/74041149/b587ed69-a1c1-4f14-8956-53fa8fcee241)](https://my-todo-list-heso.vercel.app/)
+
+[URL](https://my-todo-list-heso.vercel.app/)
+
+![image](https://github.com/tjdsksro90/my-todo-list/assets/74041149/b587ed69-a1c1-4f14-8956-53fa8fcee241)
