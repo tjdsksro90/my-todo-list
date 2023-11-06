@@ -12,7 +12,17 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### 링크
+## 컴포넌트
+
+### pages 
+- TodoList.jsx
+### components
+- Input.jsx
+- List.jsx
+- Todo.jsx
+
+
+## 링크
 
 [URL](https://my-todo-list-heso.vercel.app/)
 
