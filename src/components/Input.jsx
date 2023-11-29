@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { addTodo } from "redux/modules/todos";
+import { v4 as uuidv4 } from "uuid";
 
-let number = 2;
+// let number = 2;
 
 function Input({ todos, setTodos }) {
   // 추가하게 될 빈값 기본값
@@ -11,6 +14,7 @@ function Input({ todos, setTodos }) {
     isDone: false,
   };
   const [todo, setTodo] = useState(initialState);
+  const dispatch = useDispatch();
 
   // input 입력값 변화 체크
   const onChangeHandler = (event) => {
@@ -23,9 +27,16 @@ function Input({ todos, setTodos }) {
   const onSubmitHandler = () => {
     if (todo.title.trim() === "" || todo.body.trim() === "")
       alert("내용을 입력해주세요.");
-    setTodos([...todos, { ...todo, id: number }]);
-    setTodo(initialState);
-    number++;
+    // setTodos([...todos, { ...todo, id: number }]);
+    // setTodo(initialState);
+    // number++;
+    const newTodo = {
+      id: uuidv4(),
+      title: todo.title,
+      body: todo.body,
+      isDone: todo.isDone,
+    };
+    dispatch(addTodo(newTodo));
   };
 
   return (
